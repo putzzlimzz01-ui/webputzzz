@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Saya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">MyWeb</span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"      class="nav-link active">Home</a></li>
+        <li><a href="#about"     class="nav-link">About</a></li>
+        <li><a href="#skills"    class="nav-link">Skills</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact"   class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-btn" id="themeBtn" title="Toggle Theme">🌙</button>
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="blob blob3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">👋 Halo, Selamat Datang!</div>
+      <h1 class="hero-title">
+        Saya <span class="highlight">Nama Kamu</span><br/>
+        <span class="typing" id="typingText"></span>
+      </h1>
+      <p class="hero-desc">
+        Seorang yang passionate dalam membuat hal-hal keren di dunia digital.
+        Mari berkenalan dan berkolaborasi bersama!
+      </p>
+      <div class="hero-btns">
+        <a href="#portfolio" class="btn btn-primary">Lihat Karya ✨</a>
+        <a href="#contact"   class="btn btn-outline">Hubungi Saya 📬</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Projek</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">2+</span>
+          <span class="stat-label">Tahun</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Semangat</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="avatar-ring">
+        <div class="avatar">
+          <span class="avatar-emoji">🧑‍💻</span>
+        </div>
+      </div>
+      <div class="floating-card card1">⚡ Fast</div>
+      <div class="floating-card card2">🎨 Creative</div>
+      <div class="floating-card card3">💡 Innovative</div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Tentang Saya</span>
+        <h2 class="section-title">Siapa <span class="highlight">Saya?</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-img-box">
+            <div class="about-emoji">🧑‍💻</div>
+            <div class="about-badge-float">✦ Available</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>Nama Lengkap Kamu</h3>
+          <p class="about-role">🎓 Pelajar / Mahasiswa / Profesional</p>
+          <p class="about-desc">
+            Halo! Saya adalah seseorang yang sangat tertarik dengan teknologi
+            dan kreativitas. Saya suka membuat website, aplikasi, dan berbagai
+            hal digital yang bermanfaat bagi orang lain.
+          </p>
+          <p class="about-desc">
+            Di waktu luang, saya suka belajar hal baru, membaca, dan
+            mengeksplorasi ide-ide segar. Saya percaya bahwa belajar
+            tidak pernah berhenti!
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <span>Indonesia</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🎂</span>
+              <span>Tahun Lahir Kamu</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <span>email@kamu.com</span>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">💼</span>
+              <span>Open for Collaboration</span>
+            </div>
+          </div>
+          <a href="#contact" class="btn btn-primary">Let's Connect 🤝</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Kemampuan</span>
+        <h2 class="section-title">Skill <span class="highlight">Saya</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>Membuat website yang responsif dan modern</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="85"></div>
+          </div>
+          <span class="skill-pct">85%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Mendesain tampilan yang menarik dan user-friendly</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="75"></div>
+          </div>
+          <span class="skill-pct">75%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">📱</div>
+          <h3>Mobile Dev</h3>
+          <p>Pengembangan aplikasi untuk platform mobile</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="70"></div>
+          </div>
+          <span class="skill-pct">70%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <h3>Database</h3>
+          <p>Pengelolaan dan optimasi database</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="65"></div>
+          </div>
+          <span class="skill-pct">65%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Problem Solving</h3>
+          <p>Memecahkan masalah dengan solusi kreatif</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="90"></div>
+          </div>
+          <span class="skill-pct">90%</span>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">🤝</div>
+          <h3>Teamwork</h3>
+          <p>Bekerja sama dalam tim yang produktif</p>
+          <div class="skill-bar">
+            <div class="skill-fill" data-width="95"></div>
+          </div>
+          <span class="skill-pct">95%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Karya Saya</span>
+        <h2 class="section-title">Porto<span class="highlight">folio</span></h2>
+      </div>
+
+      <!-- Filter -->
+      <div class="filter-btns">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="web">Website</button>
+        <button class="filter-btn" data-filter="app">Aplikasi</button>
+        <button class="filter-btn" data-filter="design">Desain</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <div class="porto-card" data-cat="web">
+          <div class="porto-img">🌐</div>
+          <div class="porto-body">
+            <span class="porto-tag">Website</span>
+            <h3>Toko Online</h3>
+            <p>Website e-commerce modern dengan fitur keranjang belanja dan pembayaran.</p>
+            <div class="porto-footer">
+              <div class="porto-tech">
+                <span>HTML</span><span>CSS</span><span>JS</span>
+              </div>
+              <a href="#" class="porto-link">Lihat →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="porto-card" data-cat="app">
+          <div class="porto-img">📱</div>
+          <div class="porto-body">
+            <span class="porto-tag">Aplikasi</span>
+            <h3>Task Manager</h3>
+            <p>Aplikasi manajemen tugas dengan fitur reminder dan kategori.</p>
+            <div class="porto-footer">
+              <div class="porto-tech">
+                <span>React</span><span>Node.js</span>
+              </div>
+              <a href="#" class="porto-link">Lihat →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="porto-card" data-cat="design">
+          <div class="porto-img">🎨</div>
+          <div class="porto-body">
+            <span class="porto-tag">Desain</span>
+            <h3>Brand Identity</h3>
+            <p>Desain identitas merek lengkap termasuk logo dan panduan warna.</p>
+            <div class="porto-footer">
+              <div class="porto-tech">
+                <span>Figma</span><span>Illustrator</span>
+              </div>
+              <a href="#" class="porto-link">Lihat →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="porto-card" data-cat="web">
+          <div class="porto-img">📊</div>
+          <div class="porto-body">
+            <span class="porto-tag">Website</span>
+            <h3>Dashboard Admin</h3>
+            <p>Panel admin dengan grafik interaktif dan manajemen data real-time.</p>
+            <div class="porto-footer">
+              <div class="porto-tech">
+                <span>Vue.js</span><span>Chart.js</span>
+              </div>
+              <a href="#" class="porto-link">Lihat →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="porto-card" data-cat="app">
+          <div class="porto-img">🎮</div>
+          <div class="porto-body">
+            <span class="porto-tag">Aplikasi</span>
+            <h3>Mini Game</h3>
+            <p>Game browser sederhana dengan sistem skor dan leaderboard.</p>
+            <div class="porto-footer">
+              <div class="porto-tech">
+                <span>JavaScript</span><span>Canvas</span>
+              </div>
+              <a href="#" class="porto-link">Lihat →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="porto-card" data-cat="design">
+          <div class="porto-img">🖼️</div>
+          <div class="porto-body">
+            <span class="porto-tag">Desain</span>
+            <h3>UI Mobile App</h3>
+            <p>Desain antarmuka aplikasi mobile yang modern dan intuitif.</p>
+            <div class="porto-footer">
+              <div class="porto-tech">
+                <span>Figma</span><span>Prototype</span>
+              </div>
+              <a href="#" class="porto-link">Lihat →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hubungi Saya</span>
+        <h2 class="section-title">Mari <span class="highlight">Terhubung!</span></h2>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <p class="contact-desc">
+            Punya proyek atau ide menarik? Jangan ragu untuk menghubungi saya.
+            Saya selalu terbuka untuk diskusi dan kolaborasi!
+          </p>
+          <div class="contact-cards">
+            <a href="mailto:email@kamu.com" class="contact-card">
+              <span class="cc-icon">📧</span>
+              <div>
+                <span class="cc-label">Email</span>
+                <span class="cc-value">email@kamu.com</span>
+              </div>
+            </a>
+            <a href="https://wa.me/628xxxxxxxxx" class="contact-card" target="_blank">
+              <span class="cc-icon">💬</span>
+              <div>
+                <span class="cc-label">WhatsApp</span>
+                <span class="cc-value">+62 8xx-xxxx-xxxx</span>
+              </div>
+            </a>
+            <a href="https://instagram.com/usernamekamu" class="contact-card" target="_blank">
+              <span class="cc-icon">📸</span>
+              <div>
+                <span class="cc-label">Instagram</span>
+                <span class="cc-value">@usernamekamu</span>
+              </div>
+            </a>
+            <a href="https://github.com/usernamekamu" class="contact-card" target="_blank">
+              <span class="cc-icon">💻</span>
+              <div>
+                <span class="cc-label">GitHub</span>
+                <span class="cc-value">@usernamekamu</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label>Nama Kamu</label>
+            <input type="text" placeholder="Masukkan nama..." required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="email@contoh.com" required />
+          </div>
+          <div class="form-group">
+            <label>Subjek</label>
+            <input type="text" placeholder="Tentang apa?" required />
+          </div>
+          <div class="form-group">
+            <label>Pesan</label>
+            <textarea rows="5" placeholder="Tulis pesanmu di sini..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Kirim Pesan 🚀
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">✦</span>
+          <span class="logo-text">MyWeb</span>
+        </div>
+        <p>Dibuat dengan ❤️ menggunakan HTML, CSS & JavaScript</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Nama Kamu. All rights reserved.</p>
+        <p>Hosted on GitHub Pages 🚀</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
